@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;hostKeyVerifier&quot;:{&quot;stringHostKeyChecking&quot;:&quot;ASK&quot;},&quot;serverAliveInterval&quot;:300}" host="202.114.196.75" id="9f58974e-2238-4869-a5f4-c5a84e9ac29e" port="22" nameFormat="DESCRIPTIVE" username="lzw" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

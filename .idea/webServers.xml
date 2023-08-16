@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="07b76a3e-8281-4709-8b03-62b58a1730a0" name="Server">
+        <fileTransfer rootFolder="/DATA/DATA/lzw/code/ConvNeXt" accessType="SFTP" host="121.5.234.219" port="7000" sshConfigId="f3ed34c3-bda0-4eb0-bf36-041706e9e507" sshConfig="lzw@121.5.234.219:7000 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="100000" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

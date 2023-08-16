@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="lzw@121.5.234.219:7000 password" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="Server">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/DATA/DATA/lzw/code/ConvNeXt" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lzw@121.5.234.219:6000 password">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lzw@121.5.234.219:7000 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/DATA/lzw/code/ConvNeXt" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lzw@121.5.234.219:7000 password (1)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/DATA/lzw/code/ConvNeXt" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lzw@172.27.25.36:22 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/DATA/DATA/lzw/code/ConvNeXt" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lzw@172.27.25.36:22 password (1)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/DATA/lzw/code/ConvNeXt" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lzw@172.27.25.36:22 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lzw@202.114.196.75:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/DATA/lzw/code/ConvNeXt" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lzw@s1.z100.vip:32642">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lzw@s1.z100.vip:32642 password">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lzw@s1.z100.vip:32642 password (1)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lzw@s5.z100.vip:32642">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lzw@s5.z100.vip:32642 password">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lzw@s5.z100.vip:32642 password (1)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

@@ -1,0 +1,38 @@
+python run_with_submitit.py --nodes 1 --ngpus 3 \
+--model convnext_tiny --drop_path 0.1 \
+--batch_size 32 --lr 4e-3 --update_freq 1 \
+--model_ema true --model_ema_eval true \
+--data_path /DATA/DATA/lzw/data/ScienceDataBank_split/ \
+--job_dir ./output
+
+python -m torch.distributed.launch --nproc_per_node=3 main.py \
+--model adacanet_base --drop_path 0.1 \
+--batch_size 32 --lr 4e-3 --update_freq 4 \
+--model_ema true --model_ema_eval true \
+--data_path /DATA/DATA/lzw/data/ScienceDataBank_split/ \
+--output_dir ./output/mass/convnext_base1
+
+
+# convit 必须使用 32 的bs, 否则难以收敛
+nohup python -m torch.distributed.launch --nproc_per_node=2 main.py \
+--model ghostnet --drop_path 0.1 \
+--input_size 224 \
+--batch_size 64 --lr 4e-3 --update_freq 4 \
+--model_ema false --model_ema_eval false \
+--data_path /DATA/lzw/data/10C_split/ \
+--output_dir ./output/nimrf_10c/ghostnet &
+
+
+python -m torch.distributed.launch --nproc_per_node=1 main.py \
+--model convit_2_4_224 --eval true \
+--resume ./output/rocks_extend/convit_gtres_2_4_224/checkpoint-best.pth \
+--input_size 224 --drop_path 0.1 \
+--data_path /DATA/lzw/data/6C_train_split_extend
+
+
+python -m torch.distributed.launch --nproc_per_node=1 main.py \
+--model vit_b_32 --eval true \
+--resume ./output/rocks_extend/vit_b_32/checkpoint-best.pth \
+--input_size 224 --drop_path 0.1 \
+--data_path /DATA/lzw/data/6C_train_split_extend/
+
