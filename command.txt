@@ -15,12 +15,12 @@ python -m torch.distributed.launch --nproc_per_node=3 main.py \
 
 # convit 必须使用 32 的bs, 否则难以收敛
 nohup python -m torch.distributed.launch --nproc_per_node=2 main.py \
---model ghostnet --drop_path 0.1 \
+--model convit_1_2_224 --drop_path 0.1 \
 --input_size 224 \
 --batch_size 64 --lr 4e-3 --update_freq 4 \
 --model_ema false --model_ema_eval false \
 --data_path /DATA/lzw/data/10C_split/ \
---output_dir ./output/nimrf_10c/ghostnet &
+--output_dir ./output/nimrf_10c/convit_1_2_224 &
 
 
 python -m torch.distributed.launch --nproc_per_node=1 main.py \

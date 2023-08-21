@@ -25,6 +25,7 @@ import models.swin_transformer
 import models.DCV
 import models.poolformer
 import models.mobilevit
+import vanillanet
 
 import models.convit
 import models.convit_ga
